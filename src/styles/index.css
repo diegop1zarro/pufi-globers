@@ -28,7 +28,6 @@ html {
   width: 100%;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6901960784), rgba(0, 0, 0, 0.4588235294), rgba(0, 0, 0, 0.0470588235));
 }
 
 .navbar_links {
@@ -88,7 +87,7 @@ html {
 }
 
 .presentation_container {
-  background-image: url("/public/products/slider.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6901960784), rgba(34, 34, 34, 0.0156862745), rgba(49, 49, 49, 0), rgba(78, 77, 77, 0), rgba(165, 165, 165, 0)), url("/public/products/slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;

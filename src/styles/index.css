@@ -1,0 +1,613 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6901960784), rgba(0, 0, 0, 0.4588235294), rgba(0, 0, 0, 0.0470588235));
+}
+
+.navbar_links {
+  display: flex;
+}
+.navbar_links a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.navbar_links a h3 {
+  font-family: Verdana, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+  margin: 2px;
+  color: white;
+  font-weight: 300;
+}
+.navbar_links img {
+  width: 50px;
+  height: 40px;
+  margin-bottom: 2px;
+}
+
+.box2 {
+  border-left: 1px solid rgba(228, 226, 226, 0.9450980392);
+  border-right: 1px solid rgba(228, 226, 226, 0.9450980392);
+}
+
+.box3 {
+  border-right: 1px solid rgba(228, 226, 226, 0.9450980392);
+}
+
+.user_options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.user_options a {
+  text-decoration: none;
+  margin-left: 3px;
+  margin-right: 3px;
+  color: white;
+}
+.user_options img {
+  width: 27px;
+  height: 20px;
+  padding: 2px;
+}
+
+.Account {
+  display: flex;
+  border-right: 1px solid gainsboro;
+}
+
+.presentation_container {
+  background-image: url("/public/products/slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
+.titles h4 {
+  color: white;
+  font-size: 60px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: 400;
+  text-shadow: 2px 2px 7px black;
+}
+
+.button_container {
+  width: 40px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.button_container button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+.button_container button:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.192);
+}
+
+.pufipuff_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pufipuff_background {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url("/public/products/pufi_puff.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufipuff_background button {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+}
+.pufipuff_background:hover button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pufipuff_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+}
+.pufipuff_product img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufipuff_product button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.pufipuff_product button:hover {
+  cursor: pointer;
+  color: rgba(129, 126, 126, 0.7803921569);
+}
+
+.pufiRain_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pufiRain_background {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url("/public/products/p_rain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufiRain_background button {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+}
+.pufiRain_background:hover button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pufiRain_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+}
+.pufiRain_product img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufiRain_product button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.pufiRain_product button:hover {
+  cursor: pointer;
+  color: rgba(129, 126, 126, 0.7803921569);
+}
+
+.pufiCart_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pufiCart_background {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url("/public/products/pufi_cart.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufiCart_background button {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+}
+.pufiCart_background:hover button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pufiCart_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+}
+.pufiCart_product img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufiCart_product button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.pufiCart_product button:hover {
+  cursor: pointer;
+  color: rgba(129, 126, 126, 0.7803921569);
+}
+
+.pufinap_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pufinap_background {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.6)), url("/public/products/pufi_nap.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufinap_background button {
+  border: none;
+  color: transparent;
+  background-color: transparent;
+}
+.pufinap_background:hover button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.pufinap_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 300px;
+  height: 500px;
+}
+.pufinap_product img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pufinap_product button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.pufinap_product button:hover {
+  cursor: pointer;
+  color: rgba(129, 126, 126, 0.7803921569);
+}
+.pufinap_product img {
+  height: 120px;
+}
+
+.newsLetter_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  padding: 2px;
+  align-content: center;
+  box-sizing: border-box;
+}
+.images img {
+  margin: 1px;
+  width: 230px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.insta {
+  font-family: Verdana, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.insta h5 {
+  color: rgba(129, 126, 126, 0.7803921569);
+  margin-bottom: 2px;
+}
+.insta p {
+  font-size: 40px;
+  margin-top: 2px;
+}
+
+.newsletter {
+  font-family: Verdana, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter h5 {
+  color: rgba(129, 126, 126, 0.7803921569);
+  margin-bottom: 2px;
+}
+.newsletter p {
+  font-size: 40px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.newsletter h6 {
+  margin-top: 2px;
+  width: 210px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  margin-top: 10px;
+}
+.form input {
+  width: 600px;
+  height: 45px;
+  border: 0.5px solid rgb(104, 104, 104);
+  border-right: none;
+  padding: 10px;
+}
+.form button {
+  height: 45px;
+  background: transparent;
+  border: 0.5px solid rgb(104, 104, 104);
+  border-left: none;
+  padding-right: 5px;
+}
+.form button:hover {
+  cursor: pointer;
+}
+.form button img {
+  width: 20px;
+  height: 14px;
+}
+
+.mensaje .error {
+  font-size: 18px;
+  color: red;
+}
+.mensaje .exito {
+  font-size: 18px;
+  color: green;
+}
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 2px solid rgba(138, 137, 137, 0.842);
+  margin-top: 50px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.products_links {
+  display: flex;
+  flex-direction: column;
+}
+.products_links a {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(128, 128, 128, 0.7607843137);
+  border-right: 1px solid rgba(128, 128, 128, 0.7607843137);
+  box-sizing: border-box;
+}
+.contact a {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+.security {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 400px;
+  border-right: 1px solid rgba(128, 128, 128, 0.7607843137);
+}
+.security h4 {
+  margin-top: 0;
+}
+
+.security_2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.security_2 img {
+  width: 50px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.security_2 p {
+  font-size: 12px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+.socials p {
+  font-weight: 500;
+  margin-top: 4px;
+  font-size: 12px;
+}
+.socials img {
+  width: 30px;
+  height: 25px;
+  margin-top: 0;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid gray;
+  height: 27px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.copyright h6 {
+  color: rgba(129, 126, 126, 0.7803921569);
+}
+.copyright img {
+  height: 25px;
+}/*# sourceMappingURL=index.css.map */

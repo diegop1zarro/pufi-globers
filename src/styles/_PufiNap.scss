@@ -1,0 +1,18 @@
+.pufinap_container {
+    display:flex;
+    flex-wrap: wrap;  
+}
+
+.pufinap_background {
+    background-image: $backgroundColor, url('/public/products/pufi_nap.jpg');
+    @include Background();
+}
+
+.pufinap_product {
+    @include products();
+
+    img{
+        height: 120px;
+    }
+}
+

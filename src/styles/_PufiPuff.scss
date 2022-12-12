@@ -1,0 +1,15 @@
+.pufipuff_container {
+    display:flex;
+    flex-wrap: wrap;  
+}
+
+.pufipuff_background {
+    background-image: $backgroundColor, url('/public/products/pufi_puff.jpg');
+    @include Background();
+}
+
+.pufipuff_product {
+    @include products();
+}
+
+

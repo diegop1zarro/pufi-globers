@@ -1,0 +1,71 @@
+// variables
+
+$displays: flex;
+$backgroundColor: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60));
+$fontFamily: Verdana, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, sans-serif;
+$colorGris: #817e7ec7;
+$font-weight: 500;
+$boxpadding: border-box;
+
+// mixins
+
+@mixin Background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    height: 500px;
+    object-fit: cover;
+
+    button {
+        border: none;
+        color: transparent;
+        background-color: transparent;        
+    }
+
+    &:hover {
+        button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;        
+            padding: 20px; 
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 15px;
+            box-sizing: $boxpadding;
+            cursor: pointer;
+        }
+    }    
+}
+
+@mixin  products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    height: 500px;
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    } 
+    
+    button {
+        background-color: transparent;
+        border: none;
+        color: black;       
+        padding: 10px;
+        box-sizing: $boxpadding;
+        
+        &:hover {
+            cursor: pointer;
+            color: $colorGris;
+        }
+    }      
+}

@@ -1,0 +1,74 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;    
+    padding-top: 30px;
+    width: 100%;
+    box-sizing: $boxpadding;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #000000b0, #00000075, #0000000c);
+}
+
+.navbar_links {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 6px;
+        margin-right: 6px;
+
+        h3 {
+            font-family:$fontFamily;
+            margin: 2px;
+            color:white;
+            font-weight: 300;
+        }                  
+    }
+
+    img {
+        width: 50px;
+        height: 40px;
+        margin-bottom: 2px;
+    }
+}
+
+.box2 {    
+    border-left: 1px solid #e4e2e2f1;
+    border-right: 1px solid #e4e2e2f1;
+}
+
+.box3 {   
+    border-right: 1px solid #e4e2e2f1;
+}
+
+.user_options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+
+    a {
+        text-decoration: none;
+        margin-left: 3px;
+        margin-right: 3px;
+        color: white;
+    }
+
+    img {
+        width: 27px;
+        height: 20px;
+        padding: 2px;
+    }
+}
+
+.Account{
+    display: flex;
+    border-right: 1px solid gainsboro;
+}
+
+
+

@@ -1,0 +1,14 @@
+.pufiRain_container {
+    display:flex;
+    flex-wrap: wrap;    
+}
+
+.pufiRain_background {
+    background-image: $backgroundColor, url('/public/products/p_rain.jpg');
+    @include Background();
+}
+
+.pufiRain_product {
+    @include products()
+}
+

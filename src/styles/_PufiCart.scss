@@ -1,0 +1,14 @@
+.pufiCart_container {
+    display:flex;
+    flex-wrap: wrap;  
+}
+
+.pufiCart_background {
+    background-image: $backgroundColor, url('/public/products/pufi_cart.jpg');
+    @include Background();
+}
+
+.pufiCart_product {
+    @include products();
+}
+

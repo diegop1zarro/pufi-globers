@@ -7,11 +7,11 @@ export default function PuffiPuff() {
     <div className='pufipuff_product'>
       <img src='/products/pufi_puff_2.jpg' alt="img" />
       <h3>Pufi PUFF</h3>
-      <p> Descripcion de producto. Este es un texto simulado.</p>
+      <p> Descripción de producto. Este es un texto simulado.</p>
       <button>VER MAS</button>
     </div>
     <div className='pufipuff_background'> 
-      <button> Shop</button>                    
+      <button>SHOP</button>                    
     </div>
 </div>
   )

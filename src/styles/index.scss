@@ -3,7 +3,7 @@
 
 // ui settings
 
-@import './base/settings';
+@import './base/mixins.scss';
 @import './base/App.scss';
 
 // components
@@ -13,7 +13,7 @@
 @import './PufiRain';
 @import './PufiCart';
 @import './PufiNap';
-@import './Information';
+@import './NewsLetter';
 @import './Form';
 @import './Footer';
 

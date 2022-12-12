@@ -10,5 +10,10 @@
 
 .pufiCart_product {
     @include products();
+     p {
+        font-size: 13px;
+        font-weight: 500;
+        color:gray;
+    }
 }
 

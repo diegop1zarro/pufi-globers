@@ -9,6 +9,10 @@
 }
 
 .pufiRain_product {
-    @include products()
+    @include products();
+    p {
+        font-size: 13px;
+        font-weight: 500;
+        color:gray;
+    }
 }
-

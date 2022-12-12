@@ -201,6 +201,11 @@ html {
   cursor: pointer;
   color: rgba(129, 126, 126, 0.7803921569);
 }
+.pufipuff_product p {
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
 
 .pufiRain_container {
   display: flex;
@@ -263,6 +268,11 @@ html {
   cursor: pointer;
   color: rgba(129, 126, 126, 0.7803921569);
 }
+.pufiRain_product p {
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
 
 .pufiCart_container {
   display: flex;
@@ -324,6 +334,11 @@ html {
 .pufiCart_product button:hover {
   cursor: pointer;
   color: rgba(129, 126, 126, 0.7803921569);
+}
+.pufiCart_product p {
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
 }
 
 .pufinap_container {
@@ -390,6 +405,11 @@ html {
 .pufinap_product img {
   height: 120px;
 }
+.pufinap_product p {
+  font-size: 13px;
+  font-weight: 500;
+  color: gray;
+}
 
 .newsLetter_container {
   display: flex;
@@ -425,6 +445,7 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  padding-bottom: 10px;
 }
 .insta h5 {
   color: rgba(129, 126, 126, 0.7803921569);
@@ -433,6 +454,7 @@ html {
 .insta p {
   font-size: 40px;
   margin-top: 2px;
+  font-weight: 100;
 }
 
 .newsletter {
@@ -508,7 +530,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border-top: 2px solid rgba(138, 137, 137, 0.842);
+  box-shadow: 2px -2px 5px 1px rgba(0, 0, 0, 0.2);
   margin-top: 50px;
   padding: 30px;
   box-sizing: border-box;
@@ -600,10 +622,10 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid gray;
+  border-top: 1px solid rgba(136, 130, 130, 0.486);
   height: 27px;
-  margin-left: 30px;
-  margin-right: 30px;
+  width: 95%;
+  margin: 0 auto;
 }
 .copyright h6 {
   color: rgba(129, 126, 126, 0.7803921569);
